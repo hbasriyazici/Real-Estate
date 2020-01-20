@@ -1,0 +1,61 @@
+.navbar-two {
+    margin-top: 69px;
+}
+
+.modal-img {
+    width: 600px !important;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .modal-img {
+        width: 100% !important;
+        height: 100% !important;
+        margin-left: 2%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar-one {
+        padding: 15px;
+    }
+
+    .navbar-two {
+        visibility: hidden;
+        margin: 0;
+        height: 93px;
+    }
+    .insta-icon {
+        display: none;
+    }
+
+    .insta-mobile-icon {
+        padding-right: 0%;
+        margin-top: 4%;
+        position: absolute;
+        margin-left: 91%;
+    }
+}
+
+@media (min-width: 1281px) {
+    .insta-icon {
+        position: relative;
+        margin-top: 3.2%;
+    }
+
+    .insta-mobile-icon {
+        display: none;
+    }
+}
+
+.navbar-brand {
+    font-size: 35px;
+}
+
+.nav-item {
+    font-size: 20px;
+}
+
+.insta-icon {
+    font-size: 15px;
+}
+
