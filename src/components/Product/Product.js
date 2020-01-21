@@ -72,7 +72,7 @@ const Product = (props) => {
                 <SlideDots len={images.length} activeItem={aItem} changeItem={changeImage}/>
             </Link>
             <div className="card-body product__text text-center">
-                <p className="card-title product__title">
+                <p className="card-title">
                     <Link to={`/products/${id}`}>{title}</Link>
                 </p>
                 <h5 className="product__price">${formatMoney(price)}</h5>

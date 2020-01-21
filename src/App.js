@@ -31,10 +31,8 @@ class App extends Component {
             <ScrollToTop/>
                 <Header/>
                 <Switch>
-                    <Route exact path={'/'} component={AnaSayfa}/>
-                    <Route exact path={'/products'} component={Home}/>
+                    <Route exact path={'/'} component={Home}/>
                     <Route exact path={'/sandalyeler'} component={SandalyeHome}/>
-
                     <Route exact path={'/contact'} component={Contact}/>
                     <Route exact path={'/products/:id'} component={ProductDetail}/>
                 </Switch>
