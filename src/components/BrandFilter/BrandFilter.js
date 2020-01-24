@@ -25,7 +25,7 @@ const BrandFilter = (props) => {
         return (
             <div className="category-card card mb-3">
                 <div className="card-header">
-                    <h3>Filtrele</h3>
+                    <h3>Filter</h3>
                 </div>
                 <ul className="list-group flex-row flex-wrap">
                     {brands.map(brand => (

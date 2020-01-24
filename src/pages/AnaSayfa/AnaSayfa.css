@@ -1,57 +1,4 @@
-.category-body:hover {
-    text-decoration: none;
-}
 
-.category-inline {
-    position: relative;
-    overflow: hidden;
-}
-
-.category-inline img {
-    width: 100%;
-}
-
-.category-name {
-    padding-left: 190px;
-    padding-right: 23px;
-    -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-}
-
-@media (max-width: 767px) {
-    .category-name {
-        padding-left: 172px;
-        padding-right: 22px;
-    }
-}
-
-.category-name h3 {
-    color: #222222;
-    margin-bottom: 0;
-    font-size: 17px;
-    letter-spacing: 0.05em;
-    margin-top: 5px;
-    font-weight: 700;
-    text-transform: uppercase;
-    line-height: 1;
-}
-
-@media (max-width: 767px) {
-    .category-name h3 {
-        font-size: 17px;
-    }
-}
 
 /*buradan*/
 
@@ -61,6 +8,8 @@
 .section-dark {
     z-index: -2;
 }
+
+
 .form-control,
 .form-group .form-control {
     border: 0;
@@ -286,7 +235,7 @@ fieldset[disabled] .form-group .form-control {
 label {
     font-size: 16px;
     line-height: 1.42857143;
-    color: #BDBDBD;
+    color: black;
     font-weight: 400
 }
 
@@ -605,8 +554,13 @@ select.form-control[multiple] {
     transition: all 0.3s ease-in-out
 }
 
+.form-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
 #contactForm {
-    margin-top: -10px
+    width: 35rem;
 }
 
 #contactForm .form-group label.control-label {

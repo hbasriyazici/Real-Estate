@@ -16,11 +16,12 @@ const SlideDots = (
         if(activeItem === i) {
             dotClass += ' active';
         }
-        // eslint-disable-next-line
-        dots.push(<button
-            onClick={() => {changeItem(i)}}
-            role="button"
-            className={dotClass}><span></span></button>)
+        
+        dots.push(
+                <button onClick={() => {changeItem(i)}} className={dotClass}>
+                    <span></span>
+                </button>
+            )
     }
 
     return (

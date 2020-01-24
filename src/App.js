@@ -12,7 +12,6 @@ import Home from "./pages/Home/Home";
 import SandalyeHome from "./pages/Home/SandalyeHome";
 
 
-import AnaSayfa from "./pages/AnaSayfa/AnaSayfa";
 import Contact from "./pages/Contact/Contact";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
