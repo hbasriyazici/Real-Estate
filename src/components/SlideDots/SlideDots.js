@@ -25,7 +25,7 @@ const SlideDots = (
     }
 
     return (
-        <div className="owl-dots">
+        <div className="owl-dots mt-5">
             {dots}
         </div>
     );

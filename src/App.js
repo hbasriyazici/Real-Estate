@@ -9,7 +9,7 @@ import './App.scss';
 import Home from "./pages/Home/Home";
 
 /* brand pages */
-import SandalyeHome from "./pages/Home/SandalyeHome";
+import HouseHome from "./pages/Home/HouseHome";
 
 
 import Contact from "./pages/Contact/Contact";
@@ -31,7 +31,7 @@ class App extends Component {
                 <Header/>
                 <Switch>
                     <Route exact path={'/'} component={Home}/>
-                    <Route exact path={'/sandalyeler'} component={SandalyeHome}/>
+                    <Route exact path={'/houses'} component={HouseHome}/>
                     <Route exact path={'/contact'} component={Contact}/>
                     <Route exact path={'/products/:id'} component={ProductDetail}/>
                 </Switch>

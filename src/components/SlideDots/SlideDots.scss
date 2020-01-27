@@ -1,7 +1,7 @@
 .owl-dots {
   display: none;
   position: absolute;
-  bottom: -1rem;
+  bottom: 2rem;
   left: 0;
 
 }
@@ -12,8 +12,8 @@
 }
 
 .owl-dots .active.owl-dot {
-  background-color: #f28b00;
-  border-color: #f28b00;
+    background-color: white;
+    border-color: white;
 }
 
 .owl-dots .owl-dot {

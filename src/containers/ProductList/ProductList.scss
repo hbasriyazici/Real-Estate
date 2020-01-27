@@ -1,4 +1,10 @@
 
-$body-bg: #000;
+
 
 @import '~bootstrap/scss/bootstrap.scss';
+
+$body-bg: #ADB1B1;
+
+.product-list {
+    background: $body-bg;
+}

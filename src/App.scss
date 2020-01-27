@@ -1,6 +1,20 @@
-.navbar-two {
-    margin-top: 69px;
+@import url('https://fonts.googleapis.com/css?family=Paytone+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap');
+
+
+$primaryFont: 'Paytone One',
+sans-serif;
+$secondaryFont: 'Nunito',
+sans-serif;
+
+
+
+body {
+    font-family: $secondaryFont;
 }
+
+
+
 
 .modal-img {
     width: 600px !important;
@@ -21,11 +35,7 @@
         padding: 15px;
     }
 
-    .navbar-two {
-        visibility: hidden;
-        margin: 0;
-        height: 93px;
-    }
+    
     .insta-icon {
         display: none;
     }
@@ -60,4 +70,6 @@
 .insta-icon {
     font-size: 15px;
 }
+
+
 

@@ -1,12 +1,12 @@
 import React from 'react';
-import SandalyeList from "../../containers/ProductList/SandalyeList";
+import HouseList from "../../containers/ProductList/HouseList";
 
-const SandalyeHome = () => {
+const HouseHome = () => {
     return (
         <React.Fragment>
             <div className="container mt-4">
                 <div className="row">
-                    <SandalyeList/>
+                    <HouseList/>
                 </div>
             </div>
         </React.Fragment>
@@ -14,4 +14,4 @@ const SandalyeHome = () => {
 };
 
 
-export default SandalyeHome;
+export default HouseHome;

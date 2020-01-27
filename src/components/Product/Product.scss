@@ -1,9 +1,13 @@
+$card-bg : #dff9fb;
+
 .product {
-  padding-bottom: 2rem;
   border: none;
+  background: $card-bg;
+  border-radius: 30px 30px 30px 30px;
+
   &__img {
     width: 100%;
-    
+    border-radius: 30px 30px 0px 0px;
   }
 
   &__text {
@@ -12,8 +16,8 @@
 
   &__link {
     flex: 0 0 60%;
-    padding: 1rem;
     position: relative;
+    height: 1rem;
   }
 
   &__title {
@@ -49,16 +53,23 @@
 }
 
 .card-body {
-    padding: 1rem;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+
+    .card-title {
+        font-size: 20px;
+        font-weight: 900;
+        margin-bottom: 0.3rem;
+
+        a {
+            color: black;
+        }
+    }
 }
 
-.card-title {
-    font-size: 21px;
-}
 
-.card-title a {
-    color: black;
-}
+
 
 .card-title a:hover {
     text-decoration: none;
@@ -67,6 +78,35 @@
 .product-dtl {
     border:none;
 }
+
+.product__brand {
+    position: relative;
+    right: 5%;
+    bottom: 15rem;
+    background: #f6e58d;
+    padding: 5px;
+    color: black;
+    border-radius: 17px;
+    font-weight: 900;
+}
+
+.product__link:hover {
+    text-decoration: none;
+}
+
+.product-info {
+    width: 56%;
+    
+    .product__price {
+        font-size: 20px;
+        font-weight: 900;
+        padding: 7%;
+        background: #f6e58d;
+        border-radius: 17px;
+    }
+}
+
+
 @media only screen and (max-width: 768px) {
   .product {
     height: auto !important;
@@ -78,5 +118,245 @@
     & .owl-dots {
       display: inline-block;
     }
+
+    
+
   }
+}
+
+// iphone x lanscape
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 812px) 
+and (-webkit-device-pixel-ratio : 3)
+and (orientation : landscape) {
+        .product__brand {
+            position: absolute;
+            right: 5% !important;
+            bottom: 83% !important;
+            background: gold;
+            padding: 5px;
+            color: black;
+            border-radius: 10px;
+            font-weight: 900;
+        }
+
+        
+}
+
+// iphone x portrait
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 812px) 
+and (-webkit-device-pixel-ratio : 3)
+ {
+        .product__brand {
+            position: absolute;
+            right: 5%;
+            bottom: 86%;
+            background: gold;
+            padding: 5px;
+            color: black;
+            border-radius: 15px;
+            font-weight: 900;
+        }
+
+        .product__link {
+            height: 5rem !important;
+            padding-bottom: 16px;
+        }
+}
+
+// pixel 2 portrait
+@media only screen 
+and (min-device-width : 411px) 
+and (max-device-width : 731px) and (orientation: portrait) {
+    .product__brand {
+        position: absolute;
+        right: 5%;
+        bottom: 86%;
+        background: gold;
+        padding: 5px;
+        color: black;
+        border-radius: 15px;
+        font-weight: 900;
+    }
+}
+
+// pixel 2 landscape
+@media only screen 
+and (min-device-width : 411px) 
+and (max-device-width : 731px) and (orientation: landscape) {
+    .product__brand {
+        position: absolute;
+        right: 4%;
+        bottom: 90%;
+        background: gold;
+        padding: 5px;
+        color: black;
+        border-radius: 15px;
+        font-weight: 900;
+    }
+}
+
+// pixel 2xl portrait
+@media only screen 
+and (min-device-width : 411px) 
+and (max-device-width : 823px) and (orientation: portrait) {
+    .product__brand {
+        position: absolute;
+        right: 4%;
+        bottom: 88%;
+        background: gold;
+        padding: 5px;
+        color: black;
+        border-radius: 15px;
+        font-weight: 900;
+    }
+}
+
+// pixel 2xl landscape
+@media only screen 
+and (min-device-width : 411px) 
+and (max-device-width : 823px) and (orientation: landscape) {
+    .product__brand {
+        position: absolute;
+        right: 5%;
+        bottom: 83%;
+        background: gold;
+        padding: 5px;
+        color: black;
+        border-radius: 15px;
+        font-weight: 900;
+    }
+
+    .product__link {
+        height: 20rem;
+    }
+}
+
+// galaxy s5 portrait
+@media only screen 
+and (min-device-width : 360px) 
+and (max-device-width : 640px) and (orientation: portrait) {
+    .product__brand {
+        position: absolute;
+        right: 4%;
+        bottom: 86%;
+        background: gold;
+        padding: 5px;
+        color: black;
+        border-radius: 15px;
+        font-weight: 900;
+    }
+}
+
+// galaxy s5 landscape
+@media only screen 
+and (min-device-width : 360px) 
+and (max-device-width : 640px) and (orientation: landscape) {
+    .product__brand {
+        position: absolute;
+        right: 4%;
+        bottom: 90%;
+        background: gold;
+        padding: 5px;
+        color: black;
+        border-radius: 15px;
+        font-weight: 900;
+    }
+}
+
+// iphone 5s portrait
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 568px) and (orientation: portrait) {
+    .product__brand {
+        position: absolute;
+        right: 5%;
+        bottom: 84%;
+        background: gold;
+        padding: 5px;
+        color: black;
+        border-radius: 15px;
+        font-weight: 900;
+    }
+}
+
+// iphone 6/7/8 landscape
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) and (orientation: landscape) {
+    .product__brand {
+        position: absolute;
+        right: 4%;
+        bottom: 90%;
+        background: gold;
+        padding: 5px;
+        color: black;
+        border-radius: 15px;
+        font-weight: 900;
+    }
+}
+
+// iphone 6/7/8 Plus portrait
+@media only screen 
+and (min-device-width : 414px) 
+and (max-device-width : 736px) and (orientation: portrait) {
+    .product__brand {
+        position: absolute;
+        right: 4%;
+        bottom: 88%;
+        background: gold;
+        padding: 5px;
+        color: black;
+        border-radius: 15px;
+        font-weight: 900;
+    }
+}
+
+// iphone 6/7/8 Plus landscape
+@media only screen 
+and (min-device-width : 414px) 
+and (max-device-width : 736px) and (orientation: landscape) {
+    .product__brand {
+        position: absolute;
+        right: 3%;
+        bottom: 90%;
+        background: gold;
+        padding: 5px;
+        color: black;
+        border-radius: 15px;
+        font-weight: 900;
+    }
+}
+
+// ipad landscape
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+    .product__brand {
+        position: absolute;
+        right: 6%;
+        bottom: 81%;
+        background: gold;
+        padding: 5px;
+        color: black;
+        border-radius: 15px;
+        font-weight: 900;
+    }
+}
+
+// ipad PRO portrait
+@media only screen 
+and (min-device-width : 1024px) 
+and (max-device-width : 1366px) and (orientation: portrait) {
+    .product__brand {
+        position: absolute;
+        right: 6%;
+        bottom: 81%;
+        background: gold;
+        padding: 5px;
+        color: black;
+        border-radius: 15px;
+        font-weight: 900;
+    }
 }

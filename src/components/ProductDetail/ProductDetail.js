@@ -22,11 +22,11 @@ const ProductDetail = (props) => {
                 </p>
                 <hr className="mb-4 mt-4"/>
                 <dl className="item-property">
-                    <dt>Açıklama</dt>
+                    <dt>Description</dt>
                     <dd><p className="text-capitalize">{description}</p></dd>
                 </dl>
                 <Link to="/contact">
-                <button className="btn btn-success">Hemen Kirala</button>
+                <button className="btn btn-success">Book now</button>
                 </Link>
             </article>
         </aside>

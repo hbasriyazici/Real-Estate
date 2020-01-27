@@ -59,16 +59,20 @@ class ProductList extends Component {
     render() {
 
         return (
+            
             <div className="col-lg-9">
-                <div className="row">
-                    {paginationPipe(this.props.products, this.state).map(product =>{
-                        let classes = `${this.state.colValue} col-md-6 mb-4`;
-                        
-                        return (<div className={classes} key={product.id}>
-                            <Product product={product} />
-                        </div>)
-                        
-                    })}
+                <div className="product-list">
+                    <div className="row">
+                        {paginationPipe(this.props.products, this.state).map(product =>{
+                            let classes = `${this.state.colValue} col-md-6 mb-4`;
+                            
+                            return (
+                                <div className={classes} key={product.id}>
+                                    <Product product={product} />
+                                </div>
+                            )
+                        })}
+                    </div>
                 </div>
                 <div className="d-flex justify-content-center">
                     <Pagination
@@ -82,6 +86,7 @@ class ProductList extends Component {
                     />
                 </div>
             </div>
+            
         );
     }
 }

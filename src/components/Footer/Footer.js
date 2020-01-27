@@ -7,7 +7,7 @@ const Footer = () => {
                 <div className="row">
                     <div className="col-lg-12 text-center mt-3 mb-3">
                         <hr/>
-                        <h5 className="mb-3">Unique Chairs</h5>
+                        <h5 className="mb-3">Real Estate by Hasan Yazici</h5>
                     </div>
                 </div>
             </div>

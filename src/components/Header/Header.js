@@ -9,7 +9,7 @@ const Header = () => {
          
         <header className="header-transparent">
             <nav className="navbar navbar-expand-lg text-center">
-                <div className="container">
+                <div className="container-fluid">
                     <NavLink to="/" className="navbar-brand">E.</NavLink>
                     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon">

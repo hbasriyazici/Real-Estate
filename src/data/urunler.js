@@ -1,51 +1,61 @@
 export const urunler = [{
-    "title": "Damla Siyah",
+    "title": "Modern loft apartment in the center of Kiev",
     "images": [
-        "https://images.unsplash.com/photo-1480074568708-e7b720bb3f09?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1353&q=80"
+        "https://images.unsplash.com/photo-1565038914410-bceb20161823?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80"
     ],
-    "brand": "sandalye ve tabureler",
+    "brand": "houses",
     "price": 2693.4407990587074,
-    "size": "Yükseklik: 97 Ayak Boyu: 42 Oturum: 47x47",
+    "size": "2200 sqft",
     "id": 0,
     "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!"
 }, {
-    "title": "Damla Siyah",
+    "title": "Modern loft apartment in the center of Kiev",
     "images": [
-        "https://images.unsplash.com/photo-1480074568708-e7b720bb3f09?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1353&q=80"
+        "https://images.unsplash.com/photo-1523217582562-09d0def993a6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80"
     ],
-    "brand": "sandalye ve tabureler",
+    "brand": "condos",
     "price": 2693.4407990587074,
-    "size": "Yükseklik: 97 Ayak Boyu: 42 Oturum: 47x47",
+    "size": "2200 sqft",
     "id": 1,
     "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!"
 }, {
-    "title": "Damla Siyah",
+    "title": "Modern loft apartment in the center of Kiev",
     "images": [
-        "https://images.unsplash.com/photo-1480074568708-e7b720bb3f09?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1353&q=80"
+        "https://images.unsplash.com/photo-1499916078039-922301b0eb9b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80"
     ],
-    "brand": "sandalye ve tabureler",
+    "brand": "houses",
     "price": 2693.4407990587074,
-    "size": "Yükseklik: 97 Ayak Boyu: 42 Oturum: 47x47",
+    "size": "2200 sqft",
     "id": 2,
     "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!"
 }, {
-    "title": "Damla Siyah",
+    "title": "Modern loft apartment in the center of Kiev",
     "images": [
-        "https://images.unsplash.com/photo-1480074568708-e7b720bb3f09?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1353&q=80"
+        "https://images.unsplash.com/photo-1570076146047-06848c7b8226?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80"
     ],
-    "brand": "sandalye ve tabureler",
+    "brand": "apartments",
     "price": 2693.4407990587074,
-    "size": "Yükseklik: 97 Ayak Boyu: 42 Oturum: 47x47",
+    "size": "2200 sqft",
     "id": 3,
     "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!"
 }, {
-    "title": "Damla Siyah",
+    "title": "Modern loft apartment in the center of Kiev",
     "images": [
-        "https://images.unsplash.com/photo-1480074568708-e7b720bb3f09?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1353&q=80"
+        "https://images.unsplash.com/photo-1574197634840-1ab768e4c8f9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80"
     ],
-    "brand": "sandalye ve tabureler",
+    "brand": "townhomes",
     "price": 2693.4407990587074,
-    "size": "Yükseklik: 97 Ayak Boyu: 42 Oturum: 47x47",
+    "size": "2200 sqft",
     "id": 4,
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!"
+}, {
+    "title": "Modern loft apartment in the center of Kiev",
+    "images": [
+        "https://images.unsplash.com/photo-1553576776-83c6a10b35b7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80"
+    ],
+    "brand": "townhomes",
+    "price": 2693.4407990587074,
+    "size": "2200 sqft",
+    "id": 5,
     "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!"
 }]

@@ -89,7 +89,7 @@ class Pagination extends Component {
 
         const prevButton = (<li className={prevButtonClass}>
             <button
-                className="page-link" onClick={this.onPrev} tabIndex="-1">Önceki</button>
+                className="page-link" onClick={this.onPrev} tabIndex="-1">Prev</button>
         </li>);
 
         let nextButtonClass = 'page-item';
@@ -102,7 +102,7 @@ class Pagination extends Component {
             <li className={nextButtonClass}>
                 <button
                     disabled={this.isOnLastPage()}
-                    className="page-link" onClick={this.onNext}>Sonraki</button>
+                    className="page-link" onClick={this.onNext}>Next</button>
             </li>
         );
 

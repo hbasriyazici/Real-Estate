@@ -5,7 +5,7 @@ import Product from "../../components/Product/Product";
 import {brandFilter} from "../../pipes/brandFilter";
 import {orderByFilter} from "../../pipes/orderByFilter";
 
-class SandalyeList extends Component {
+class HouseList extends Component {
 
     state = {
         colValue : 'col-lg-4',
@@ -58,16 +58,18 @@ class SandalyeList extends Component {
 
         return (
             <div className="col-lg-12">
-                <div className="row">
-                    {this.props.products.filter(product => product.brand === "sandalye ve tabureler").map(product =>{
-                        let classes = `${this.state.colValue} col-md-6 mb-4`;
-                        
-                        return (<div className={classes}>
-                            <Product key={product.id} product={product} />
-                        </div>)
-                        
-                    })}
-                    
+                <div className="product-list">
+                    <div className="row">
+                        {this.props.products.filter(product => product.brand === "houses").map(product =>{
+                            let classes = `${this.state.colValue} col-md-6 mb-4`;
+                            
+                            return (
+                                <div className={classes}>
+                                    <Product key={product.id} product={product} />
+                                </div>
+                            )
+                        })}
+                    </div>
                 </div>
                 
             </div>
@@ -86,4 +88,4 @@ const mapStateToProps = state => {
     return {products: filterByOrderArr }
 };
 
-export default connect(mapStateToProps, null)(SandalyeList);
+export default connect(mapStateToProps, null)(HouseList);
