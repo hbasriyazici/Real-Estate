@@ -1,10 +1,14 @@
+.pagination-wrapper {
+  padding: 10px;
+  border: 1px solid #dcdde1;
+  border-radius: 3px;
+  margin-left: 1.8%;
+  margin-right: 1.8%;
+  margin-bottom: 3%;
+}
 
-
-
-@import '~bootstrap/scss/bootstrap.scss';
-
-$body-bg: #ADB1B1;
-
-.product-list {
-    background: $body-bg;
+@media only screen and (max-width: 768px) {
+  .pagination-wrapper {
+    border: none;
+  }
 }

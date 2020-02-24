@@ -1,13 +1,14 @@
-$card-bg : #dff9fb;
+
 
 .product {
   border: none;
-  background: $card-bg;
-  border-radius: 30px 30px 30px 30px;
+  border-radius: 9px;
+  margin: 20px;
+  box-shadow: 0px 3px 48px -6px rgba(0,0,0,0.1);
 
   &__img {
     width: 100%;
-    border-radius: 30px 30px 0px 0px;
+    border-radius: 9px 9px 0px 0px;
   }
 
   &__text {
@@ -49,18 +50,34 @@ $card-bg : #dff9fb;
 }
 
 .card-body {
-    padding-left: 0;
-    padding-right: 0;
-    padding-top: 23px;
+
 
     .card-title {
-        font-size: 20px;
+        font-size: 22px;
         font-weight: 900;
         margin-bottom: 0.3rem;
 
         a {
-            color: black;
+            color: #636e72;
         }
+    }
+
+    .product-location {
+      .location-text {
+        font-size: 18px;
+        font-weight: 900;
+        color: #636e72;
+      }
+    }
+
+    .sqft, .rooms {
+      font-size: 18px;
+      font-weight: 900;
+      color: #636e72;
+    }
+
+    .icon {
+      color: #ff4757;
     }
 }
 
@@ -82,7 +99,7 @@ $card-bg : #dff9fb;
     background: #f6e58d;
     padding: 5px;
     color: black;
-    border-radius: 17px;
+    border-radius: 10px;
     font-weight: 900;
 }
 
@@ -94,9 +111,8 @@ $card-bg : #dff9fb;
   
     
     .product__price {
-        font-size: 20px;
-        font-weight: 900;
-        margin-top: 1rem;
+      font-size: 30px;
+      font-weight: 900;
     }
 }
 
@@ -114,7 +130,21 @@ $card-bg : #dff9fb;
       display: inline-block;
     }
 
-    
+    .sqft, .rooms {
+      font-size: 14px;
+    }
+
+    .location-text {
+      font-size: 14px !important;
+    }
+
+    .card-title a {
+      font-size: 18px
+    }
+
+    .product__price {
+      font-size: 23px;
+    }
 
   }
 }

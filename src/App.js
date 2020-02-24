@@ -3,6 +3,7 @@ import {Provider} from 'react-redux';
 import {createStore } from 'redux';
 import rootReducer from './reducers';
 
+
 import {HashRouter, Switch, Route} from 'react-router-dom';
 
 import './App.scss';

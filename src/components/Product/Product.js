@@ -15,6 +15,9 @@ const Product = (props) => {
         price,
         images,
         id,
+        size,
+        rooms,
+        location,
         brand
     } = props.product;
 
@@ -77,12 +80,23 @@ const Product = (props) => {
                 </span>
                 <SlideDots len={images.length} activeItem={aItem} changeItem={changeImage}/>
             </Link>
-            <div className="card-body product__text text-left">
-                <p className="card-title pl-3 pr-3 mb-2">
+            <div className="card-body product__text text-left pl-4 pr-4 pt-4">
+                <div className="product-info">
+                    <h5 className="product__price"> ${formatMoney(price)}</h5>
+                </div>
+                <p className="card-title mb-2">
                     <Link to={`/products/${id}`}>{title}</Link>
                 </p>
-                <div className="product-info pl-3 pr-3">
-                    <h5 className="product__price"> ${formatMoney(price)}</h5>
+                <div className="product-location mt-3">
+                  <h5 className="location-text"> <i className="fas fa-map-marker-alt icon mr-2"></i> {location} </h5>
+                </div>
+                <div className="row product-sizes mt-3">
+                  <div className="col">
+                    <h5 className="sqft"> <i className="fas fa-compress icon mr-2"></i>  {size} </h5>
+                  </div>
+                  <div className="col text-right">
+                    <h5 className="rooms"> <i className="fas fa-bed icon mr-2"></i> {rooms} </h5>
+                  </div>
                 </div>
             </div>
         </div>
