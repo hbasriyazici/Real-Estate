@@ -15,7 +15,7 @@ $card-bg : #dff9fb;
   }
 
   &__link {
-    flex: 0 0 60%;
+    flex: 0 0 60% !important;
     position: relative;
     height: 1rem;
   }
