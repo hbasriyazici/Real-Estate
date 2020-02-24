@@ -1,7 +1,7 @@
 .owl-dots {
-  display: none;
+  
   position: absolute;
-  bottom: 2rem;
+  bottom: 17vh;
   left: 0;
 
 }
@@ -30,4 +30,49 @@
   padding: 3px;
   border: solid 1px #e9e9e9;
   cursor: pointer;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .owl-dots {
+    display: inline-block;
+    bottom: 35%;
+  }
+
+}
+
+//x landscape
+
+@media only screen and (min-width: 812px) and (orientation: landscape)   { 
+  .owl-dots {
+    bottom: 43vh !important;
+  }
+}
+
+
+//6-7-8 plus 
+@media only screen and (min-device-width: 667px) and (orientation: landscape) { 
+  .owl-dots {
+    bottom: 35vh;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (orientation: portrait) {
+  .owl-dots {
+    bottom: 31%;
+  }
+}
+
+//6-7-8  lands
+@media only screen and (min-width: 667px) and (max-width: 375px) and (orientation: landscape) { 
+  .owl-dots {
+    bottom: 31vh;
+  }
+}
+
+//pixel 2 xl 
+
+@media only screen and (min-width: 411px) and (max-width: 767px) and (orientation: landscape) {
+  .owl-dots {
+    bottom: 39vh ;
+  }
 }

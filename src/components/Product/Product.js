@@ -64,12 +64,14 @@ const Product = (props) => {
 
     return (
         <div className="card product">
-            <Link to={`/products/${id}`} className="product__link text-right"><img
-                onMouseMove={handleImageChange}
-                onMouseOut={handleMouseOut}
-                onTouchMove={handleImageChange}
-                onTouchEnd={handleMouseOut}
-                className="card-img-top product__img" src={img} alt={title} ref={imageRef}/>
+            <Link to={`/products/${id}`} className="product__link text-right">
+              <img
+                  onMouseMove={handleImageChange}
+                  onMouseOut={handleMouseOut}
+                  onTouchMove={handleImageChange}
+                  onTouchEnd={handleMouseOut}
+                  className="card-img-top product__img" src={img} alt={title} ref={imageRef}
+                />
                 <span className="product__brand"> 
                     {brand} 
                 </span>

@@ -14,11 +14,7 @@ $card-bg : #dff9fb;
     flex: 0 0 40%;
   }
 
-  &__link {
-    flex: 0 0 60% !important;
-    position: relative;
-    height: 1rem;
-  }
+ 
 
   &__title {
     font-size: .8rem;
@@ -55,7 +51,7 @@ $card-bg : #dff9fb;
 .card-body {
     padding-left: 0;
     padding-right: 0;
-    padding-top: 0;
+    padding-top: 23px;
 
     .card-title {
         font-size: 20px;
@@ -80,9 +76,9 @@ $card-bg : #dff9fb;
 }
 
 .product__brand {
-    position: relative;
+    position: absolute;
     right: 5%;
-    bottom: 15rem;
+    margin-top: 1rem;
     background: #f6e58d;
     padding: 5px;
     color: black;
@@ -95,14 +91,12 @@ $card-bg : #dff9fb;
 }
 
 .product-info {
-    width: 56%;
+  
     
     .product__price {
         font-size: 20px;
         font-weight: 900;
-        padding: 7%;
-        background: #f6e58d;
-        border-radius: 17px;
+        margin-top: 1rem;
     }
 }
 
@@ -110,6 +104,7 @@ $card-bg : #dff9fb;
 @media only screen and (max-width: 768px) {
   .product {
     height: auto !important;
+
     &__add-to-cart {
       visibility: visible;
       opacity: 1;
@@ -124,240 +119,3 @@ $card-bg : #dff9fb;
   }
 }
 
-// iphone x lanscape
-@media only screen 
-and (min-device-width : 375px) 
-and (max-device-width : 812px) 
-and (-webkit-device-pixel-ratio : 3)
-and (orientation : landscape) {
-        .product__brand {
-            position: absolute;
-            right: 5% !important;
-            bottom: 83% !important;
-            background: gold;
-            padding: 5px;
-            color: black;
-            border-radius: 10px;
-            font-weight: 900;
-        }
-
-        
-}
-
-// iphone x portrait
-@media only screen 
-and (min-device-width : 375px) 
-and (max-device-width : 812px) 
-and (-webkit-device-pixel-ratio : 3)
- {
-        .product__brand {
-            position: absolute;
-            right: 5%;
-            bottom: 86%;
-            background: gold;
-            padding: 5px;
-            color: black;
-            border-radius: 15px;
-            font-weight: 900;
-        }
-
-        .product__link {
-            flex: 0 0 60% !important;
-            height: 5rem !important;
-            padding-bottom: 16px;
-        }
-}
-
-// pixel 2 portrait
-@media only screen 
-and (min-device-width : 411px) 
-and (max-device-width : 731px) and (orientation: portrait) {
-    .product__brand {
-        position: absolute;
-        right: 5%;
-        bottom: 86%;
-        background: gold;
-        padding: 5px;
-        color: black;
-        border-radius: 15px;
-        font-weight: 900;
-    }
-}
-
-// pixel 2 landscape
-@media only screen 
-and (min-device-width : 411px) 
-and (max-device-width : 731px) and (orientation: landscape) {
-    .product__brand {
-        position: absolute;
-        right: 4%;
-        bottom: 90%;
-        background: gold;
-        padding: 5px;
-        color: black;
-        border-radius: 15px;
-        font-weight: 900;
-    }
-}
-
-// pixel 2xl portrait
-@media only screen 
-and (min-device-width : 411px) 
-and (max-device-width : 823px) and (orientation: portrait) {
-    .product__brand {
-        position: absolute;
-        right: 4%;
-        bottom: 88%;
-        background: gold;
-        padding: 5px;
-        color: black;
-        border-radius: 15px;
-        font-weight: 900;
-    }
-}
-
-// pixel 2xl landscape
-@media only screen 
-and (min-device-width : 411px) 
-and (max-device-width : 823px) and (orientation: landscape) {
-    .product__brand {
-        position: absolute;
-        right: 5%;
-        bottom: 83%;
-        background: gold;
-        padding: 5px;
-        color: black;
-        border-radius: 15px;
-        font-weight: 900;
-    }
-
-    .product__link {
-        height: 20rem;
-    }
-}
-
-// galaxy s5 portrait
-@media only screen 
-and (min-device-width : 360px) 
-and (max-device-width : 640px) and (orientation: portrait) {
-    .product__brand {
-        position: absolute;
-        right: 4%;
-        bottom: 86%;
-        background: gold;
-        padding: 5px;
-        color: black;
-        border-radius: 15px;
-        font-weight: 900;
-    }
-}
-
-// galaxy s5 landscape
-@media only screen 
-and (min-device-width : 360px) 
-and (max-device-width : 640px) and (orientation: landscape) {
-    .product__brand {
-        position: absolute;
-        right: 4%;
-        bottom: 90%;
-        background: gold;
-        padding: 5px;
-        color: black;
-        border-radius: 15px;
-        font-weight: 900;
-    }
-}
-
-// iphone 5s portrait
-@media only screen 
-and (min-device-width : 320px) 
-and (max-device-width : 568px) and (orientation: portrait) {
-    .product__brand {
-        position: absolute;
-        right: 5%;
-        bottom: 84%;
-        background: gold;
-        padding: 5px;
-        color: black;
-        border-radius: 15px;
-        font-weight: 900;
-    }
-}
-
-// iphone 6/7/8 landscape
-@media only screen 
-and (min-device-width : 375px) 
-and (max-device-width : 667px) and (orientation: landscape) {
-    .product__brand {
-        position: absolute;
-        right: 4%;
-        bottom: 90%;
-        background: gold;
-        padding: 5px;
-        color: black;
-        border-radius: 15px;
-        font-weight: 900;
-    }
-}
-
-// iphone 6/7/8 Plus portrait
-@media only screen 
-and (min-device-width : 414px) 
-and (max-device-width : 736px) and (orientation: portrait) {
-    .product__brand {
-        position: absolute;
-        right: 4%;
-        bottom: 88%;
-        background: gold;
-        padding: 5px;
-        color: black;
-        border-radius: 15px;
-        font-weight: 900;
-    }
-}
-
-// iphone 6/7/8 Plus landscape
-@media only screen 
-and (min-device-width : 414px) 
-and (max-device-width : 736px) and (orientation: landscape) {
-    .product__brand {
-        position: absolute;
-        right: 3%;
-        bottom: 90%;
-        background: gold;
-        padding: 5px;
-        color: black;
-        border-radius: 15px;
-        font-weight: 900;
-    }
-}
-
-// ipad landscape
-@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
-    .product__brand {
-        position: absolute;
-        right: 6%;
-        bottom: 81%;
-        background: gold;
-        padding: 5px;
-        color: black;
-        border-radius: 15px;
-        font-weight: 900;
-    }
-}
-
-// ipad PRO portrait
-@media only screen 
-and (min-device-width : 1024px) 
-and (max-device-width : 1366px) and (orientation: portrait) {
-    .product__brand {
-        position: absolute;
-        right: 6%;
-        bottom: 81%;
-        background: gold;
-        padding: 5px;
-        color: black;
-        border-radius: 15px;
-        font-weight: 900;
-    }
-}
