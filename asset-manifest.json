@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Real-Estate/static/css/main.21226521.chunk.css",
+    "main.css": "/Real-Estate/static/css/main.ccce368f.chunk.css",
     "main.js": "/Real-Estate/static/js/main.bf9b4077.chunk.js",
     "main.js.map": "/Real-Estate/static/js/main.bf9b4077.chunk.js.map",
     "runtime-main.js": "/Real-Estate/static/js/runtime-main.90215f2c.js",
@@ -8,15 +8,15 @@
     "static/js/2.c93ff5fd.chunk.js": "/Real-Estate/static/js/2.c93ff5fd.chunk.js",
     "static/js/2.c93ff5fd.chunk.js.map": "/Real-Estate/static/js/2.c93ff5fd.chunk.js.map",
     "index.html": "/Real-Estate/index.html",
-    "precache-manifest.ad74789dd036e447d7c27b3b7eb19113.js": "/Real-Estate/precache-manifest.ad74789dd036e447d7c27b3b7eb19113.js",
+    "precache-manifest.7eed218d47dd336184b72a1cae650058.js": "/Real-Estate/precache-manifest.7eed218d47dd336184b72a1cae650058.js",
     "service-worker.js": "/Real-Estate/service-worker.js",
-    "static/css/main.21226521.chunk.css.map": "/Real-Estate/static/css/main.21226521.chunk.css.map",
+    "static/css/main.ccce368f.chunk.css.map": "/Real-Estate/static/css/main.ccce368f.chunk.css.map",
     "static/js/2.c93ff5fd.chunk.js.LICENSE": "/Real-Estate/static/js/2.c93ff5fd.chunk.js.LICENSE"
   },
   "entrypoints": [
     "static/js/runtime-main.90215f2c.js",
     "static/js/2.c93ff5fd.chunk.js",
-    "static/css/main.21226521.chunk.css",
+    "static/css/main.ccce368f.chunk.css",
     "static/js/main.bf9b4077.chunk.js"
   ]
 }
