@@ -25,37 +25,35 @@ const BrandFilter = (props) => {
     <>
       {/* buraya react bootstrap'ın accordion componenti gelecek */}
       <Accordion defaultActiveKey="1">
-        <Card>
-          <Card.Header>
-            <Accordion.Toggle as={Button} variant="link" eventKey="0">
-              Click me!
+        <Card className="accordion-card">
+          <Card.Header className="accordion-card-header">
+            <Accordion.Toggle className="accordion-button" as={Button} variant="link" eventKey="0">
+              <h3><i className="fas fa-sliders-h"></i></h3>
             </Accordion.Toggle>
           </Card.Header>
           <Accordion.Collapse eventKey="0">
-            <Card.Body>Hello! I'm the body</Card.Body>
+            <Card.Body className="accordion-card-body">
+              <div className="row">
+                <ul className="filter-list list-group list-inline flex-wrap">
+                  {brands.map(brand => (
+                    <li className="list-group-item flex-50 mt-2" key={brand}>
+                      <label className="custom-checkbox text-capitalize">
+                        {brand}
+                        <input
+                          type="checkbox"
+                          name={brand}
+                          className="custom-checkbox__input"
+                          onInput={handleSelectBox}/>
+                        <span className="custom-checkbox__span"></span>
+                      </label>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </Card.Body>
           </Accordion.Collapse>
         </Card>
       </Accordion>
-      <div className="category-card card mb-3">
-        <div className="card-header">
-          <h3>Filter</h3>
-        </div>
-        <ul className="list-group flex-row flex-wrap">
-          {brands.map(brand => (
-            <li className="list-group-item flex-50 mt-2" key={brand}>
-              <label className="custom-checkbox text-capitalize">
-                {brand}
-                <input
-                  type="checkbox"
-                  name={brand}
-                  className="custom-checkbox__input"
-                  onInput={handleSelectBox}/>
-                <span className="custom-checkbox__span"></span>
-              </label>
-            </li>
-          ))}
-        </ul>
-      </div>
     </>
   );
 
