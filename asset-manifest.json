@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/Real-Estate/static/css/main.e566beb9.chunk.css",
-    "main.js": "/Real-Estate/static/js/main.950f580e.chunk.js",
-    "main.js.map": "/Real-Estate/static/js/main.950f580e.chunk.js.map",
+    "main.css": "/Real-Estate/static/css/main.4cb4c669.chunk.css",
+    "main.js": "/Real-Estate/static/js/main.24f7d18e.chunk.js",
+    "main.js.map": "/Real-Estate/static/js/main.24f7d18e.chunk.js.map",
     "runtime-main.js": "/Real-Estate/static/js/runtime-main.90215f2c.js",
     "runtime-main.js.map": "/Real-Estate/static/js/runtime-main.90215f2c.js.map",
     "static/js/2.86644be2.chunk.js": "/Real-Estate/static/js/2.86644be2.chunk.js",
     "static/js/2.86644be2.chunk.js.map": "/Real-Estate/static/js/2.86644be2.chunk.js.map",
     "index.html": "/Real-Estate/index.html",
-    "precache-manifest.a98d28d76ba04dd7567c9f116a0bf1a9.js": "/Real-Estate/precache-manifest.a98d28d76ba04dd7567c9f116a0bf1a9.js",
+    "precache-manifest.4277b9051421d8da8c088354496ed8eb.js": "/Real-Estate/precache-manifest.4277b9051421d8da8c088354496ed8eb.js",
     "service-worker.js": "/Real-Estate/service-worker.js",
-    "static/css/main.e566beb9.chunk.css.map": "/Real-Estate/static/css/main.e566beb9.chunk.css.map",
+    "static/css/main.4cb4c669.chunk.css.map": "/Real-Estate/static/css/main.4cb4c669.chunk.css.map",
     "static/js/2.86644be2.chunk.js.LICENSE": "/Real-Estate/static/js/2.86644be2.chunk.js.LICENSE",
     "static/media/contact-image.jpg": "/Real-Estate/static/media/contact-image.bdee9515.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.90215f2c.js",
     "static/js/2.86644be2.chunk.js",
-    "static/css/main.e566beb9.chunk.css",
-    "static/js/main.950f580e.chunk.js"
+    "static/css/main.4cb4c669.chunk.css",
+    "static/js/main.24f7d18e.chunk.js"
   ]
 }
