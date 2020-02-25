@@ -82,9 +82,8 @@
     }
 
     .collapse {
-      
-      transform-origin: left bottom;
-      transform: scaleY(1);
+      height: 5rem;
+      transition: height 0.5s ease 0s;
     }
 
     .show {
@@ -125,6 +124,8 @@
   }
 
   .show {
+    height: 11rem !important;
+
     .accordion-card-body {
       height: 100% !important;
       background: white;
