@@ -1,17 +1,15 @@
 import React from 'react';
-import FilterBar from "../../containers/FilterBar/FilterBar";
-import ProductList from "../../containers/ProductList/ProductList";
+import './Home.scss';
 
 const Home = () => {
     return (
-        <React.Fragment>
+        <>
             <div className="container mt-4">
                 <div className="row">
-                    <FilterBar/>
-                    <ProductList/>
+                    Hello!
                 </div>
             </div>
-        </React.Fragment>
+        </>
     );
 };
 

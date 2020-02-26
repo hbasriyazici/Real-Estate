@@ -67,7 +67,7 @@ const Product = (props) => {
 
     return (
         <div className="card product">
-            <Link to={`/products/${id}`} className="product__link text-right">
+            <Link to={`/rent/${id}`} className="product__link text-right">
               <img
                   onMouseMove={handleImageChange}
                   onMouseOut={handleMouseOut}
@@ -85,7 +85,7 @@ const Product = (props) => {
                     <h5 className="product__price"> ${formatMoney(price)}</h5>
                 </div>
                 <p className="card-title mb-2">
-                    <Link to={`/products/${id}`}>{title}</Link>
+                    <Link to={`/rent/${id}`}>{title}</Link>
                 </p>
                 <div className="product-location mt-3">
                   <h5 className="location-text"> <i className="fas fa-map-marker-alt icon mr-2"></i> {location} </h5>

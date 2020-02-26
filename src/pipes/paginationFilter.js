@@ -1,5 +1,4 @@
-import {store} from "../App";
-import {countItem} from "../actions/actions";
+
 
 export const paginationPipe = (state,args) => {
     if (!args || !args.perPage || !args.currentPage) {

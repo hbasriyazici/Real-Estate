@@ -7,12 +7,12 @@ import rootReducer from './reducers';
 import {HashRouter, Switch, Route} from 'react-router-dom';
 
 import './App.scss';
+import Rent from "./pages/Rent/Rent";
+
+
+
+
 import Home from "./pages/Home/Home";
-
-/* brand pages */
-import HouseHome from "./pages/Home/HouseHome";
-
-
 import Contact from "./pages/Contact/Contact";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
@@ -32,9 +32,9 @@ class App extends Component {
                 <Header/>
                 <Switch>
                     <Route exact path={'/'} component={Home}/>
-                    <Route exact path={'/houses'} component={HouseHome}/>
+                    <Route exact path={'/rent'} component={Rent}/>
                     <Route exact path={'/contact'} component={Contact}/>
-                    <Route exact path={'/products/:id'} component={ProductDetail}/>
+                    <Route exact path={'/rent/:id'} component={ProductDetail}/>
                 </Switch>
                 <Footer/>
             </React.Fragment>

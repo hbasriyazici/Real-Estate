@@ -11,8 +11,8 @@ const ProductDetail = (props) => {
     } = props.product;
 
     return (
-        <aside className="col-sm-7">
-            <article className="card-body p-5">
+        <div className="col-lg-6">
+            <div className="card-body">
                 <h3 className="title mb-3">{title}</h3>
                 <hr className="mb-4 mt-4"/>
                 <p className="price-detail-wrap">
@@ -28,8 +28,8 @@ const ProductDetail = (props) => {
                 <Link to="/contact">
                 <button className="btn btn-success">Book now</button>
                 </Link>
-            </article>
-        </aside>
+            </div>
+        </div>
     );
 };
 
