@@ -6,7 +6,7 @@ import ProductSlider from "../../components/ProductSlider/ProductSlider";
 
 const ProductDetail = (props) => {
   return (
-    <div className="container-fluid">
+    <div className="container">
       <div className="card product-dtl mb-5">
         <div className="row">
           <ProductSlider images={props.product.images}/>

@@ -1,0 +1,43 @@
+.hero-section {
+  margin-top: 3rem;
+  .hero-title {
+    font-weight: 800;
+  }
+}
+
+.section-wrapper {
+  .router {
+    &:hover {
+      text-decoration: none;
+    }
+
+    .section-item {
+      text-align: center;
+  
+      .section-image {
+        width: 100%;
+        border-radius: 5%;
+      }
+  
+      .item-title {
+        position: relative;
+        bottom: 39px;
+        font-weight: 700;
+      }
+    }
+  }
+  
+}
+
+.who-are-we {
+  .paragraph {
+    .title-text {
+      font-weight: 700;
+    }
+
+    .paragraph-text {
+      font-size: 1.9vh;
+    }
+  }
+}
+
