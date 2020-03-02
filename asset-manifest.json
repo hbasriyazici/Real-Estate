@@ -1,27 +1,29 @@
 {
   "files": {
-    "main.css": "/Real-Estate/static/css/main.513fc52f.chunk.css",
-    "main.js": "/Real-Estate/static/js/main.c8f47eca.chunk.js",
-    "main.js.map": "/Real-Estate/static/js/main.c8f47eca.chunk.js.map",
+    "main.css": "/Real-Estate/static/css/main.a1ebb0c6.chunk.css",
+    "main.js": "/Real-Estate/static/js/main.655f9fd4.chunk.js",
+    "main.js.map": "/Real-Estate/static/js/main.655f9fd4.chunk.js.map",
     "runtime-main.js": "/Real-Estate/static/js/runtime-main.90215f2c.js",
     "runtime-main.js.map": "/Real-Estate/static/js/runtime-main.90215f2c.js.map",
-    "static/js/2.5af65aed.chunk.js": "/Real-Estate/static/js/2.5af65aed.chunk.js",
-    "static/js/2.5af65aed.chunk.js.map": "/Real-Estate/static/js/2.5af65aed.chunk.js.map",
+    "static/js/2.4f92177c.chunk.js": "/Real-Estate/static/js/2.4f92177c.chunk.js",
+    "static/js/2.4f92177c.chunk.js.map": "/Real-Estate/static/js/2.4f92177c.chunk.js.map",
     "index.html": "/Real-Estate/index.html",
-    "precache-manifest.3327a8567486ecd336c82e869a29ec66.js": "/Real-Estate/precache-manifest.3327a8567486ecd336c82e869a29ec66.js",
+    "precache-manifest.5817a5af5730684bbe18bc1c78c0546b.js": "/Real-Estate/precache-manifest.5817a5af5730684bbe18bc1c78c0546b.js",
     "service-worker.js": "/Real-Estate/service-worker.js",
-    "static/css/main.513fc52f.chunk.css.map": "/Real-Estate/static/css/main.513fc52f.chunk.css.map",
-    "static/js/2.5af65aed.chunk.js.LICENSE": "/Real-Estate/static/js/2.5af65aed.chunk.js.LICENSE",
+    "static/css/main.a1ebb0c6.chunk.css.map": "/Real-Estate/static/css/main.a1ebb0c6.chunk.css.map",
+    "static/js/2.4f92177c.chunk.js.LICENSE": "/Real-Estate/static/js/2.4f92177c.chunk.js.LICENSE",
     "static/media/bg.png": "/Real-Estate/static/media/bg.d6913e8c.png",
     "static/media/contact-image.jpg": "/Real-Estate/static/media/contact-image.bdee9515.jpg",
     "static/media/house.png": "/Real-Estate/static/media/house.9ab6f6e1.png",
+    "static/media/kyiv.jpg": "/Real-Estate/static/media/kyiv.80a70602.jpg",
+    "static/media/school.jpg": "/Real-Estate/static/media/school.887a5934.jpg",
     "static/media/traveller.jpg": "/Real-Estate/static/media/traveller.f7258260.jpg",
     "static/media/univ.png": "/Real-Estate/static/media/univ.1ac94473.png"
   },
   "entrypoints": [
     "static/js/runtime-main.90215f2c.js",
-    "static/js/2.5af65aed.chunk.js",
-    "static/css/main.513fc52f.chunk.css",
-    "static/js/main.c8f47eca.chunk.js"
+    "static/js/2.4f92177c.chunk.js",
+    "static/css/main.a1ebb0c6.chunk.css",
+    "static/js/main.655f9fd4.chunk.js"
   ]
 }
