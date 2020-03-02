@@ -1,13 +1,19 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Contact.scss';
 import contact from './contact-image.jpg';
 import '../AnaSayfa/AnaSayfa.css';
 
 const Contact = () => {
   return (
-    <section className="Material-contact-section section-dark">
+    <section className="Material-contact-section section-dark mt-3">
       <div className="container">
         <div className="row">
+          <div className="col-lg-12">
+            <div className="back-arrow mt-3">
+              <Link className="router" to={`/`}><h4 className="arrow"> <i className="fas fa-chevron-left"></i>  Back</h4></Link>
+            </div>
+          </div>
           <div className="col-lg-6">
             <div className="form-image-side">
               <img src={contact} alt="" className="form-image"/>

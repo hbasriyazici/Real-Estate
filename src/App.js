@@ -10,8 +10,8 @@ import './App.scss';
 import Rent from "./pages/Rent/Rent";
 import Home from "./pages/Home/Home";
 import Tour from "./pages/Tour/Tour";
+import School from "./pages/School/School";
 import Contact from "./pages/Contact/Contact";
-import Header from "./components/Header/Header";
 // eslint-disable-next-line
 import Footer from "./components/Footer/Footer";
 import ProductDetail from "./pages/ProductDetail/ProductDetail";
@@ -27,11 +27,11 @@ class App extends Component {
             <HashRouter basename="/">
             <React.Fragment>
             <ScrollToTop/>
-                <Header/>
                 <Switch>
                     <Route exact path={'/'} component={Home}/>
                     <Route exact path={'/rent'} component={Rent}/>
                     <Route exact path={'/tour'} component={Tour}/>
+                    <Route exact path={'/school-registration'} component={School}/>
                     <Route exact path={'/contact'} component={Contact}/>
                     <Route exact path={'/rent/:id'} component={ProductDetail}/>
                 </Switch>

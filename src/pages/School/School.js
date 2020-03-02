@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './Tour.scss';
-import kyiv from './kyiv.jpg';
+import './School.scss';
+import school from './school.jpg';
 
-const Tour = () => {
+const School = () => {
   return ( 
   <>
     <div className="container mb-4 mt-3">
@@ -14,24 +14,20 @@ const Tour = () => {
           </div>
           <div className="page-title mb-3">
             <h1 className="title-text">
-              City Tour
+              University Registrations
             </h1>
           </div>
         </div>
         <div className="content-wrapper mt-3 mb-3">
           <div className="col-lg-6">
             <div className="page-image-wrapper">
-              <img src={kyiv} alt="kyiv" className="page-image"/>
+              <img src={school} alt="kyiv" className="page-image"/>
             </div>
           </div>
           <div className="col-lg-6">
             <div className="content">
               <p className="content-text">
-                We help people who come to Ukraine with affordable fees. We share information
-                that will make your life easier for you, not only with the sight seeing section,
-                but also during your stay in Kiev. We should not see the guidance service as a
-                financial loss, we can guarantee that you will gain economically and culturally
-                as a result of the correct guidance.
+              Due to the lack of direct communication about university enrollments, we witnessed that companies made unusual profits over students and some of them stopped communicating the next day.  We help students with registration and guidance for the low prices.
               </p>
               <p className="content-text contact-link">
                 <Link className="router" to={`/contact`}>Contact us</Link>
@@ -45,4 +41,4 @@ const Tour = () => {
   )
 }
 
-export default Tour
+export default School
