@@ -6,7 +6,7 @@ export const urunler = [{
     "brand": "houses",
     "price": 2693.4407990587074,
     "size": "2200 sqft",
-    "rooms": "4 Bedrooms",
+    "rooms": "2",
     "location": "Rose street, Kiev",
     "id": 0,
     "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!"
@@ -18,7 +18,7 @@ export const urunler = [{
     "brand": "condos",
     "price": 2693.4407990587074,
     "size": "2200 sqft",
-    "rooms": "4 Bedrooms",
+    "rooms": "4",
     "location": "Rose street, Kiev",
     "id": 1,
     "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!"
@@ -30,7 +30,7 @@ export const urunler = [{
     "brand": "houses",
     "price": 2693.4407990587074,
     "size": "2200 sqft",
-    "rooms": "4 Bedrooms",
+    "rooms": "6",
     "location": "Rose street, Kiev",
     "id": 2,
     "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!"
@@ -42,7 +42,7 @@ export const urunler = [{
     "brand": "apartments",
     "price": 2693.4407990587074,
     "size": "2200 sqft",
-    "rooms": "4 Bedrooms",
+    "rooms": "3",
     "location": "Rose street, Kiev",
     "id": 3,
     "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!"
@@ -54,7 +54,7 @@ export const urunler = [{
     "brand": "townhomes",
     "price": 2693.4407990587074,
     "size": "2200 sqft",
-    "rooms": "4 Bedrooms",
+    "rooms": "5",
     "location": "Rose street, Kiev",
     "id": 4,
     "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!"
@@ -66,7 +66,7 @@ export const urunler = [{
     "brand": "townhomes",
     "price": 2693.4407990587074,
     "size": "2200 sqft",
-    "rooms": "4 Bedrooms",
+    "rooms": "2",
     "location": "Rose street, Kiev",
     "id": 5,
     "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!"

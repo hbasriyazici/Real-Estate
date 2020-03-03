@@ -32,8 +32,11 @@ export const decrementCartQuantity = productId => {
 };
 
 
+// ----------------------------------------------- //
+
 export const ADD_BRAND_TO_FILTER = 'ADD_BRAND_TO_FILTER';
 export const REMOVE_BRAND_FROM_FILTER = 'REMOVE_BRAND_FROM_FILTER';
+
 
 export const addBrandToFilter = brand => {
     return {
@@ -48,6 +51,26 @@ export const removeBrandFromFilter = brand => {
         type: REMOVE_BRAND_FROM_FILTER,
         brand
     }
+};
+
+// ----------------------------------------------- //
+
+//room filter actions
+export const ADD_ROOM_TO_FILTER = 'ADD_ROOM_TO_FILTER';
+export const REMOVE_ROOM_FROM_FILTER = 'REMOVE_ROOM_FROM_FILTER';
+
+export const addRoomToFilter = rooms => {
+  return {
+      type: ADD_ROOM_TO_FILTER,
+      rooms
+  }
+};
+
+export const removeRoomFromFilter = rooms => {
+  return  {
+      type: REMOVE_ROOM_FROM_FILTER,
+      rooms
+  }
 };
 
 export const ORDER_BY_ASC = 'ORDER_BY_ASC';

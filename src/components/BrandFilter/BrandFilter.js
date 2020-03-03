@@ -1,29 +1,42 @@
-// eslint-disable-next-line
+
 import React from 'react';
 import {connect} from 'react-redux';
 import { Accordion, Card, Button } from 'react-bootstrap';
 import './BrandFilter.scss';
 import {brands} from "../../data/brands";
-import {addBrandToFilter, removeBrandFromFilter} from "../../actions/actions";
+import {rooms} from "../../data/rooms";
+import {addBrandToFilter, removeBrandFromFilter, addRoomToFilter, removeRoomFromFilter} from "../../actions/actions";
 
 const BrandFilter = (props) => {
-  // eslint-disable-next-line
-  const {dispatch, brandItemsCount} = props;
+  
+  const {dispatch} = props;
   const handleSelectBox = (e) => {
     const name = e.target.name;
-    // eslint-disable-next-line
+    
     const value = e.target.checked;
 
-    if (e.target.checked) {
+    if (value) {
       dispatch(addBrandToFilter(name));
     } else {
-      dispatch(removeBrandFromFilter(name));
+      dispatch(removeBrandFromFilter(name)); 
     }
   };
 
+  const handleSelectBox2 = (e) => {
+    const name = e.target.name;
+    
+    const value = e.target.checked;
+
+    if (value) {
+      dispatch(addRoomToFilter(name));
+    } else {
+      dispatch(removeRoomFromFilter(name));
+    }
+  };
+
+
   return (
     <>
-      {/* buraya react bootstrap'ın accordion componenti gelecek */}
       <Accordion defaultActiveKey="1">
         <Card className="accordion-card">
           <Card.Header className="accordion-card-header">
@@ -50,6 +63,23 @@ const BrandFilter = (props) => {
                   ))}
                 </ul>
               </div>
+              <div className="row">
+                <ul className="filter-list list-group list-inline flex-wrap">
+                  {rooms.map(room => (
+                    <li className="list-group-item flex-50 mt-2" key={room}>
+                      <label className="custom-checkbox text-capitalize">
+                        {room}
+                        <input
+                          type="checkbox"
+                          name={room}
+                          className="custom-checkbox__input"
+                          onInput={handleSelectBox2}/>
+                        <span className="custom-checkbox__span"></span>
+                      </label>
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </Card.Body>
           </Accordion.Collapse>
         </Card>
@@ -62,16 +92,20 @@ const BrandFilter = (props) => {
 const mapStateToProps = (state) => {
 
   const brandItemsCount = {};
+  const roomItemsCount = {};
 
-  state
-    .shop
-    .products
-    .forEach(p => {
+  state.shop.products.forEach(p => {
       brandItemsCount[p.brand] = brandItemsCount[p.brand] + 1 || 1;
     });
 
-  return {brandItemsCount}
+  state.shop.products.forEach(p => {
+    roomItemsCount[p.room] = roomItemsCount[p.room] + 1 || 1;
+  });
+    
+  return {brandItemsCount, roomItemsCount}
 
 };
+
+
 
 export default connect(mapStateToProps)(BrandFilter);

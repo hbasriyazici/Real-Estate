@@ -6,7 +6,7 @@ class FilterBar extends Component {
         return (
             <div className="col-lg-12">
                 <div className="row">
-                    <div className="col-12">
+                    <div className="col-12"> 
                         <BrandFilter/>
                     </div>
                 </div>

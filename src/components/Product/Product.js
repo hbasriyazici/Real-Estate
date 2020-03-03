@@ -95,7 +95,7 @@ const Product = (props) => {
                     <h5 className="sqft"> <i className="fas fa-compress icon mr-2"></i>  {size} </h5>
                   </div>
                   <div className="col text-right">
-                    <h5 className="rooms"> <i className="fas fa-bed icon mr-2"></i> {rooms} </h5>
+                    <h5 className="rooms"> <i className="fas fa-bed icon mr-2"></i> {rooms} rooms </h5>
                   </div>
                 </div>
             </div>
