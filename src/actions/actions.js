@@ -55,7 +55,26 @@ export const removeBrandFromFilter = brand => {
 
 // ----------------------------------------------- //
 
-//room filter actions
+export const ADD_LOCATION_TO_FILTER = 'ADD_LOCATION_TO_FILTER';
+export const REMOVE_LOCATION_FROM_FILTER = 'REMOVE_LOCATION_FROM_FILTER';
+
+
+export const addLocationToFilter = location => {
+    return {
+        type: ADD_LOCATION_TO_FILTER,
+        location
+    }
+};
+
+export const removeLocationFromFilter = location => {
+    return  {
+        type: REMOVE_LOCATION_FROM_FILTER,
+        location
+    }
+};
+
+// ----------------------------------------------- //
+
 export const ADD_ROOM_TO_FILTER = 'ADD_ROOM_TO_FILTER';
 export const REMOVE_ROOM_FROM_FILTER = 'REMOVE_ROOM_FROM_FILTER';
 

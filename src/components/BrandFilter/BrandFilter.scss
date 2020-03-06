@@ -82,7 +82,7 @@
     }
 
     .collapse {
-      height: 10rem;
+      height: 16rem;
       transition: height 0.5s ease 0s;
     }
 
@@ -163,6 +163,14 @@
   
   .filter-list {
     height: 4rem;
+  }
+
+  .flex-auto {
+    flex: 1 1 auto;
+  }
+
+  .location-list {
+    height: 8rem;
   }
   
 }

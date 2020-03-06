@@ -1,11 +1,10 @@
 import React, {Component} from 'react';
-import {connect} from 'react-redux';
+import { connect } from 'react-redux';
 import Product from "../../components/Product/Product";
 
-import {brandFilter} from "../../pipes/brandFilter";
-import {productFilter} from "../../pipes/productFilter";
-import {orderByFilter} from "../../pipes/orderByFilter";
-import {paginationPipe} from "../../pipes/paginationFilter";
+import { productFilter } from "../../pipes/productFilter";
+import { orderByFilter } from "../../pipes/orderByFilter";
+import { paginationPipe } from "../../pipes/paginationFilter";
 import Pagination from "../../components/Pagination/Pagination";
 import './ProductList.scss';
 
@@ -96,11 +95,11 @@ class ProductList extends Component {
 }
 
 const mapStateToProps = state => {
-    const brands = state.brandFilter;
+    const locations = state.locationFilter;
     const rooms = state.roomFilter;
     const orderBy = state.orderBy;
 
-    const filterArr = productFilter(state.shop.products, rooms, brands);
+    const filterArr = productFilter(state.shop.products, rooms, locations);
     const filterByOrderArr = orderByFilter(filterArr, orderBy);
 
 

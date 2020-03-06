@@ -1,17 +1,15 @@
-export const productFilter = (arr, rooms, brands) => {
-  if(!rooms && !brands) return arr;
+export const productFilter = (arr, rooms, locations) => {
+  if(!rooms && !locations) return arr;
 
-  if(rooms && !brands) {
+  if(rooms && !locations) {
     return arr.filter(product => rooms.includes(product.rooms))
   }
 
-  if(!rooms && brands) {
-    return arr.filter(product => brands.includes(product.brand))
+  if(!rooms && locations) {
+    return arr.filter(product => locations.includes(product.location))
   }
 
-  if(rooms && brands) {
-    return arr.filter(product => brands.includes(product.brand)).filter(product => rooms.includes(product.rooms))
+  if(rooms && locations) {
+    return arr.filter(product => locations.includes(product.location)).filter(product => rooms.includes(product.rooms))
   }
-  /* return arr.filter(product => rooms.includes(product.rooms)); */
-  
 };

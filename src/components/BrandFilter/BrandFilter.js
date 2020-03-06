@@ -3,9 +3,9 @@ import React from 'react';
 import {connect} from 'react-redux';
 import { Accordion, Card, Button } from 'react-bootstrap';
 import './BrandFilter.scss';
-import {brands} from "../../data/brands";
+import {locations} from "../../data/locations";
 import {rooms} from "../../data/rooms";
-import {addBrandToFilter, removeBrandFromFilter, addRoomToFilter, removeRoomFromFilter} from "../../actions/actions";
+import {addLocationToFilter, removeLocationFromFilter, addRoomToFilter, removeRoomFromFilter} from "../../actions/actions";
 
 const BrandFilter = (props) => {
   
@@ -16,9 +16,11 @@ const BrandFilter = (props) => {
     const value = e.target.checked;
 
     if (value) {
-      dispatch(addBrandToFilter(name));
+      dispatch(addLocationToFilter(name));
+      console.log("aded name is: ", name)
     } else {
-      dispatch(removeBrandFromFilter(name)); 
+      dispatch(removeLocationFromFilter(name)); 
+      console.log("removed name is: ", name)
     }
   };
 
@@ -47,24 +49,28 @@ const BrandFilter = (props) => {
           <Accordion.Collapse eventKey="0">
             <Card.Body className="accordion-card-body">
               <div className="row">
-                <ul className="filter-list list-group list-inline flex-wrap">
-                  {brands.map(brand => (
-                    <li className="list-group-item flex-50 mt-2" key={brand}>
-                      <label className="custom-checkbox text-capitalize">
-                        {brand}
-                        <input
-                          type="checkbox"
-                          name={brand}
-                          className="custom-checkbox__input"
-                          onInput={handleSelectBox}/>
-                        <span className="custom-checkbox__span"></span>
-                      </label>
-                    </li>
-                  ))}
-                </ul>
+                  <ul className="filter-list location-list list-group list-inline flex-wrap">
+                      {locations.map(location => (
+                          <li className="list-group-item flex-auto mt-2" key={location}>
+                            <label className="custom-checkbox text-capitalize">
+                              {location}
+                              <input
+                                type="checkbox"
+                                name={location}
+                                className="custom-checkbox__input"
+                                onInput={handleSelectBox}/>
+                              <span className="custom-checkbox__span"></span>
+                            </label>
+                          </li>
+                        
+                      ))}
+                  </ul>
               </div>
               <div className="row">
                 <ul className="filter-list list-group list-inline flex-wrap">
+                  <h5 className="list-title">
+                  Rooms
+                  </h5>
                   {rooms.map(room => (
                     <li className="list-group-item flex-50 mt-2" key={room}>
                       <label className="custom-checkbox text-capitalize">
@@ -91,18 +97,18 @@ const BrandFilter = (props) => {
 
 const mapStateToProps = (state) => {
 
-  const brandItemsCount = {};
+  const locationItemsCount = {};
   const roomItemsCount = {};
 
   state.shop.products.forEach(p => {
-      brandItemsCount[p.brand] = brandItemsCount[p.brand] + 1 || 1;
+    locationItemsCount[p.location] = locationItemsCount[p.location] + 1 || 1;
     });
 
   state.shop.products.forEach(p => {
     roomItemsCount[p.room] = roomItemsCount[p.room] + 1 || 1;
   });
     
-  return {brandItemsCount, roomItemsCount}
+  return {locationItemsCount, roomItemsCount}
 
 };
 
