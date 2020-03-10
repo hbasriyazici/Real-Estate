@@ -82,7 +82,6 @@
     }
 
     .collapse {
-      height: 16rem;
       transition: height 0.5s ease 0s;
     }
 
@@ -97,6 +96,19 @@
       
       height: 0px !important;
     }
+}
+
+.category-card {
+  border: none;
+}
+
+.category-card .card-header {
+  background: white;
+  padding-top: 0 !important;
+}
+
+.list-group-item {
+  border: none;
 }
 
 @media only screen and (max-width: 768px) {
@@ -124,14 +136,24 @@
   }
 
   .show {
-    height: 23rem !important;
+    height: 35rem;
 
     .accordion-card-body {
       height: 100% !important;
       background: white;
       display: block;
       border-radius: 41px 41px 0px 0px;
-      box-shadow: 0px -9px 31px -12px rgba(0,0,0,0.68);
+      box-shadow: 0px -9px 31px -12px rgba(0,0,0,0.18);
+
+      .list-title-wrapper {
+        margin-top: 1rem;
+
+        .list-title {
+          width: 100%;
+          font-weight: 600;
+          padding: 2%;
+        }
+      }
     }
   }
 
@@ -142,14 +164,35 @@
   }
 
   .filter-list {
-    display: block;
-    padding-top: 5%;
-    padding-left: 5%;
-    padding-right: 5%;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap !important;
+    overflow-x: scroll;
+    flex-direction: row;
+    padding-top: 2%;
+    padding-bottom: 5%;
+    margin: 0 4% 0 4%;
+    border-radius: 20px;
+    background: #f1f1f1;
+
+    .list-group-item {
+      padding-bottom: 0;
+      margin-left: 3%;
+      border-radius: 20px;
+    }
 
     .custom-checkbox {
-      font-size: 1.5rem;
+      font-size: 20px;
+
+      .custom-checkbox__span {
+        height: 1rem;
+        width: 1rem;
+      }
     }
+  }
+
+  .filter-list::-webkit-scrollbar {
+    display: none;
   }
 
   .flex-50 {
@@ -160,9 +203,33 @@
 //for desktop 
 
 @media (min-width: 1281px) {
-  
+
+  .accordion-card-body {
+    padding-left: 36px;
+    padding-right: 36px;
+    padding-top: 0;
+    
+      .list-title-wrapper {
+        position: relative;
+        top: 21px;
+        background: white;
+        text-align: center;
+        padding-left: 5px;
+        padding-right: 5px;
+      }
+  }
+
+  .collapse {
+    height: 23rem !important;
+  }
+
   .filter-list {
-    height: 4rem;
+    height: 5.7rem;
+    width: 100%;
+    align-items: center;
+    padding-top: 15px;
+    border: 1px solid black;
+    border-radius: 10px;
   }
 
   .flex-auto {
@@ -170,20 +237,75 @@
   }
 
   .location-list {
-    height: 8rem;
+    height: 10rem;
+  }
+
+  .list-group-item {
+    background: none;
+  }
+
+  .w-5 {
+    width: 5rem;
+  }
+
+  .w-11 {
+    width: 11rem;
   }
   
 }
 
-.category-card {
-    border: none;
+// iph5 portrait
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+    .show {
+      height: 20rem;
+
+      .accordion-card-body {
+
+        .filter-list {
+
+          .list-group-item {
+            
+            .custom-checkbox {
+              display: flex;
+              padding-left: 1.5rem;
+            }
+          }
+        }
+      }
+    }
 }
 
-.category-card .card-header {
-    background: white;
-    padding-top: 0 !important;
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) { 
+    .show {
+      height: 22rem;
+    }
 }
 
-.list-group-item {
-    border: none;
+
+/* ----------- iPad 1, 2, Mini and Air ----------- */
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+    .show {
+      height: 27rem;
+
+      .filter-list {
+        padding-bottom: 3%;
+      }
+    }
 }

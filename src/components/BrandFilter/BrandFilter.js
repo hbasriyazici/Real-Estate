@@ -48,6 +48,11 @@ const BrandFilter = (props) => {
           </Card.Header>
           <Accordion.Collapse eventKey="0">
             <Card.Body className="accordion-card-body">
+              <div className="list-title-wrapper w-11">
+                <h4 className="list-title">
+                  Choose Location
+                </h4>
+              </div>
               <div className="row">
                   <ul className="filter-list location-list list-group list-inline flex-wrap">
                       {locations.map(location => (
@@ -66,11 +71,13 @@ const BrandFilter = (props) => {
                       ))}
                   </ul>
               </div>
+              <div className="list-title-wrapper w-5 mt-2">
+                <h4 className="list-title">
+                  Rooms
+                </h4>
+              </div>
               <div className="row">
                 <ul className="filter-list list-group list-inline flex-wrap">
-                  <h5 className="list-title">
-                  Rooms
-                  </h5>
                   {rooms.map(room => (
                     <li className="list-group-item flex-50 mt-2" key={room}>
                       <label className="custom-checkbox text-capitalize">
