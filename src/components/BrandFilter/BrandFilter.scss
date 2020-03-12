@@ -111,6 +111,9 @@
   border: none;
 }
 
+
+
+
 @media only screen and (max-width: 768px) {
   .accordion-card {
     position: fixed;
@@ -154,6 +157,10 @@
           padding: 2%;
         }
       }
+
+      .list-group-item {
+        animation: slide-right 0.5s cubic-bezier(0.600, -0.280, 0.735, 0.045) 0.8s both;
+      }
     }
   }
 
@@ -171,18 +178,18 @@
     flex-direction: row;
     padding-top: 2%;
     padding-bottom: 5%;
-    margin: 0 4% 0 4%;
-    border-radius: 20px;
-    background: #f1f1f1;
+    padding-right: 63%;
 
     .list-group-item {
       padding-bottom: 0;
-      margin-left: 3%;
-      border-radius: 20px;
+      margin-right: 3%;
+      margin-left: 6%;
+      border-radius: 10px;
+      box-shadow: 2px 2px 15px -1px rgba(0,0,0,0.2);
     }
 
     .custom-checkbox {
-      font-size: 20px;
+      font-size: 13px;
 
       .custom-checkbox__span {
         height: 1rem;
@@ -191,8 +198,12 @@
     }
   }
 
-  .filter-list::-webkit-scrollbar {
-    display: none;
+  .location-list {
+    .list-group-item {
+      display: flex;
+      align-items: center;
+      height: 4rem;
+    }
   }
 
   .flex-50 {
@@ -216,6 +227,10 @@
         text-align: center;
         padding-left: 5px;
         padding-right: 5px;
+
+        .list-title {
+          font-weight: 600;
+        }
       }
   }
 
@@ -245,11 +260,18 @@
   }
 
   .w-5 {
-    width: 5rem;
+    width: 6rem;
   }
 
+  .w-4 {
+    width: 4rem;
+  }
+
+  .w-10 {
+    width: 10rem;
+  }
   .w-11 {
-    width: 11rem;
+    width: 13rem;
   }
   
 }
@@ -288,7 +310,7 @@
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) { 
     .show {
-      height: 22rem;
+      height: 24rem;
     }
 }
 
