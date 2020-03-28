@@ -2,5 +2,6 @@ export const brands = [
     "houses", 
     "condos",
     "apartments",
-    "townhomes"
+    "townhomes",
+    "ev tipi"
 ];

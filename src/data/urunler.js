@@ -1,5 +1,6 @@
 import p1 from './img/p1.jpg';
 import p2 from './img/p2.jpg';
+import p3 from './img/p3.jpg';
 
 export const urunler = [{
     "title": "A home",
@@ -98,5 +99,27 @@ export const urunler = [{
     "location": "Святошинський",
     "id": 6,
     "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!"
+},{
+    "title": "Yeni ev kaydi 3",
+    "images": [
+       p3
+    ],
+    "brand": "ev tipi",
+    "price": 2693.4407990587074,
+    "size": "200m2",
+    "rooms": "4",
+    "location": "Святошинський",
+    "id": 7,
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!"
 }
+
+
+
+
+
+
+
+
+
+
 ]
