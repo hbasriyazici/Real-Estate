@@ -82,7 +82,7 @@ const Product = (props) => {
             </Link>
             <div className="card-body product__text text-left pl-4 pr-4 pt-4">
                 <div className="product-info">
-                    <h5 className="product__price"> ${formatMoney(price)}</h5>
+                    <h5 className="product__price"> {formatMoney(price)}₴</h5>
                 </div>
                 <p className="card-title mb-2">
                     <Link to={`/rent/${id}`}>{title}</Link>

@@ -1,15 +1,18 @@
+import p1 from './img/p1.jpg';
+import p2 from './img/p2.jpg';
+
 export const urunler = [{
-    "title": "Modern loft apartment in the center of Kiev",
+    "title": "A home",
     "images": [
         "https://images.unsplash.com/photo-1565038914410-bceb20161823?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80"
     ],
     "brand": "houses",
-    "price": 2693.4407990587074,
+    "price": 300,
     "size": "2200 sqft",
     "rooms": "2",
-    "location": "Дарницький",
+    "location": "Деснянський",
     "id": 0,
-    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!"
+    "description": "Ev çok güzeldir"
 }, {
     "title": "Modern loft apartment in the center of Kiev",
     "images": [
@@ -70,4 +73,30 @@ export const urunler = [{
     "location": "Святошинський",
     "id": 5,
     "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!"
-}]
+}, {
+    "title": "Yeni ev kaydi",
+    "images": [
+        "https://images.unsplash.com/photo-1553576776-83c6a10b35b7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80"
+    ],
+    "brand": "houses",
+    "price": 2693.4407990587074,
+    "size": "200m2",
+    "rooms": "4",
+    "location": "Святошинський",
+    "id": 6,
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!"
+},{
+    "title": "Yeni ev kaydi 2",
+    "images": [
+        p1,
+        p2
+    ],
+    "brand": "houses",
+    "price": 2693.4407990587074,
+    "size": "200m2",
+    "rooms": "4",
+    "location": "Святошинський",
+    "id": 6,
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!"
+}
+]
